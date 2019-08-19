@@ -1,16 +1,16 @@
 [
   { 
     "name": "Bob",
-    "species": "dog",
+    "species": "dog"
   },
    
     { 
     "name": "Elmer",
-    "species": "pygmy goat",
+    "species": "pygmy goat"
   },
     
     { 
     "name": "Gus",
-    "species": "rhinoceros",
-  },
+    "species": "rhinoceros"
+  }
 ]
