@@ -12,6 +12,7 @@
     font-weight: 600;
     background-color: bisque;
     outline: none;
+    border: none;
     border-radius: 50px;
     color: firebrick;
     cursor: pointer;
