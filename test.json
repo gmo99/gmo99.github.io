@@ -1,0 +1,16 @@
+[
+  { 
+    "name": "Bob",
+    "species": "dog",
+  },
+   
+    { 
+    "name": "Elmer",
+    "species": "pygmy goat",
+  },
+    
+    { 
+    "name": "Gus",
+    "species": "rhinoceros",
+  },
+]
