@@ -14,7 +14,7 @@ btn.addEventListener("click", function() {
 function renderHtml(data) {
     var htmlString = "";
     
-    for (i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
         htmlString += "<p>" + data[i].name + " is a " + data[i].species + ".<p>";
     }
     
