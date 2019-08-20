@@ -7,4 +7,5 @@ btn.addEventListener("click", function() {
         var data = JSON.parse(XHR.responseText);
         console.log(data[0]);
 };
+    XHR.send();
 });
