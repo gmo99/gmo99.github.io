@@ -1,3 +1,4 @@
+var pageCount = 1;
 var dataContainer = document.getElementById("fetch-info");
 var btn = document.getElementById("btn");
 
@@ -9,6 +10,10 @@ btn.addEventListener("click", function() {
         renderHtml(serverData);
 };
     XHR.send();
+    pageCount++;
+    if (pageCount > 3) {
+        btn.classList.add("hide-this");
+    }
 });
 
 function renderHtml(data) {
