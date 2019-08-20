@@ -1,9 +1,9 @@
 * {
     background-color: black;
-    text-align: center;
 }
 
 .headline {
+    text-align: center;
     color: firebrick;
 }
 
@@ -22,7 +22,7 @@
     opacity: 0.7;
     }
 
-#fetch-id {
+#fetch-info {
     color: burlywood;
     text-align: left;
 }
