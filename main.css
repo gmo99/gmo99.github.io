@@ -12,7 +12,7 @@
     visibility: hidden;
 }
 
-#btn #bt2 {
+#btn, #btn2 {
     
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -22,7 +22,7 @@
     cursor: pointer;
     }
 
-#fetch-info #fetch-info2  {
+#fetch-info, #fetch-info2  {
     color: burlywood;
     text-align: left;
 }
