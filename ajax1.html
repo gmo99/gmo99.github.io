@@ -20,9 +20,42 @@
   
   
   <script>
-    btn2.onclick = function() {
-      console.log(this);
-    };
+    btn2.onmousedown = function(event) {
+
+  let shiftX = event.clientX - btn2.getBoundingClientRect().left;
+  let shiftY = event.clientY - btn2.getBoundingClientRect().top;
+
+  btn2.style.position = 'absolute';
+  btn2.style.zIndex = 1000;
+  document.body.append(btn2);
+
+  moveAt(event.pageX, event.pageY);
+
+  // moves the ball at (pageX, pageY) coordinates
+  // taking initial shifts into account
+  function moveAt(pageX, pageY) {
+    btn2.style.left = pageX - shiftX + 'px';
+    btn2.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // drop the ball, remove unneeded handlers
+  btn2.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    btn2.onmouseup = null;
+  };
+
+};
+
+btn2.ondragstart = function() {
+  return false;
+};
   </script>
   
   
